@@ -1,0 +1,340 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LED Driver Board"
+Date "2025-08-29"
+Rev "1"
+Comp "Rodrigo Casara"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 68B3F64D
+P 3950 1500
+F 0 "H1" H 4050 1546 50  0000 L CNN
+F 1 "MountingHole" H 4050 1455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 3950 1500 50  0001 C CNN
+F 3 "~" H 3950 1500 50  0001 C CNN
+	1    3950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 68B3FC77
+P 3950 1750
+F 0 "H2" H 4050 1796 50  0000 L CNN
+F 1 "MountingHole" H 4050 1705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 3950 1750 50  0001 C CNN
+F 3 "~" H 3950 1750 50  0001 C CNN
+	1    3950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 68B3FD90
+P 4800 1500
+F 0 "H3" H 4900 1546 50  0000 L CNN
+F 1 "MountingHole" H 4900 1455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 4800 1500 50  0001 C CNN
+F 3 "~" H 4800 1500 50  0001 C CNN
+	1    4800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 68B404CD
+P 4800 1750
+F 0 "H4" H 4900 1796 50  0000 L CNN
+F 1 "MountingHole" H 4900 1705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 4800 1750 50  0001 C CNN
+F 3 "~" H 4800 1750 50  0001 C CNN
+	1    4800 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 4550
+Wire Wire Line
+	5800 4550 6350 4550
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 68CDA296
+P 5800 4550
+F 0 "#PWR0101" H 5800 4300 50  0001 C CNN
+F 1 "GNDREF" H 5805 4377 50  0000 C CNN
+F 2 "" H 5800 4550 50  0001 C CNN
+F 3 "" H 5800 4550 50  0001 C CNN
+	1    5800 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4550 6350 4050
+Wire Wire Line
+	6650 4550 6350 4550
+Wire Wire Line
+	6350 3600 6850 3600
+Wire Wire Line
+	6350 3750 6350 3600
+Wire Wire Line
+	6850 3600 6850 3450
+Connection ~ 6850 3600
+Wire Wire Line
+	7300 3000 6850 3000
+Wire Wire Line
+	7300 3150 7300 3000
+Wire Wire Line
+	6850 3750 6850 3600
+Wire Wire Line
+	7300 3750 7300 3450
+Wire Wire Line
+	7300 4550 7300 4050
+Wire Wire Line
+	7050 4550 7300 4550
+Wire Wire Line
+	6850 4250 6850 4050
+$Comp
+L Device:R R1
+U 1 1 68C8744E
+P 6850 3300
+F 0 "R1" H 6920 3346 50  0000 L CNN
+F 1 "10kΩ" H 6920 3255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6780 3300 50  0001 C CNN
+F 3 "~" H 6850 3300 50  0001 C CNN
+	1    6850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 68C8729B
+P 6850 3900
+F 0 "R2" H 6920 3946 50  0000 L CNN
+F 1 "10kΩ" H 6920 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6780 3900 50  0001 C CNN
+F 3 "~" H 6850 3900 50  0001 C CNN
+	1    6850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 68C8700D
+P 7300 3900
+F 0 "R3" H 7370 3946 50  0000 L CNN
+F 1 "280Ω" H 7370 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7230 3900 50  0001 C CNN
+F 3 "~" H 7300 3900 50  0001 C CNN
+	1    7300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 68C254F9
+P 7300 3300
+F 0 "D1" V 7339 3183 50  0000 R CNN
+F 1 "LED" V 7248 3183 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 7300 3300 50  0001 C CNN
+F 3 "~" H 7300 3300 50  0001 C CNN
+	1    7300 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 68C24710
+P 6350 3900
+F 0 "R4" H 6420 3946 50  0000 L CNN
+F 1 "100kΩ" H 6420 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6280 3900 50  0001 C CNN
+F 3 "~" H 6350 3900 50  0001 C CNN
+	1    6350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 68C22E20
+P 4700 2650
+F 0 "J1" H 4750 2900 50  0000 C CNN
+F 1 "KK 5045-2 Male 2.5mm 180°" H 4500 2800 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4700 2650 50  0001 C CNN
+F 3 "~" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 68C22814
+P 6850 4450
+F 0 "Q1" V 7085 4450 50  0000 C CNN
+F 1 "2N3904" V 7176 4450 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7050 4375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6850 4450 50  0001 L CNN
+	1    6850 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 68D216E5
+P 6300 2600
+F 0 "C1" H 6182 2554 50  0000 R CNN
+F 1 "47µF" H 6182 2645 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6338 2450 50  0001 C CNN
+F 3 "~" H 6300 2600 50  0001 C CNN
+	1    6300 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 68D219BD
+P 6850 2600
+F 0 "C2" H 6965 2646 50  0000 L CNN
+F 1 "100nF" H 6965 2555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6888 2450 50  0001 C CNN
+F 3 "~" H 6850 2600 50  0001 C CNN
+	1    6850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2750 5350 2750
+Wire Wire Line
+	6850 2750 6300 2750
+Wire Wire Line
+	6300 2450 6850 2450
+Wire Wire Line
+	4900 2650 5150 2650
+Wire Wire Line
+	5150 2650 5150 2450
+Wire Wire Line
+	5150 2450 5350 2450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 68D33B6D
+P 5350 2750
+F 0 "#FLG0101" H 5350 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 5350 2923 50  0000 C CNN
+F 2 "" H 5350 2750 50  0001 C CNN
+F 3 "~" H 5350 2750 50  0001 C CNN
+	1    5350 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 68D346D2
+P 5350 2450
+F 0 "#FLG0102" H 5350 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 5350 2623 50  0000 C CNN
+F 2 "" H 5350 2450 50  0001 C CNN
+F 3 "~" H 5350 2450 50  0001 C CNN
+	1    5350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 68D34BDE
+P 5850 2750
+F 0 "#PWR0102" H 5850 2600 50  0001 C CNN
+F 1 "+5V" H 5865 2923 50  0000 C CNN
+F 2 "" H 5850 2750 50  0001 C CNN
+F 3 "" H 5850 2750 50  0001 C CNN
+	1    5850 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 68D3C092
+P 5850 2450
+F 0 "#PWR0103" H 5850 2200 50  0001 C CNN
+F 1 "GNDREF" H 5855 2277 50  0000 C CNN
+F 2 "" H 5850 2450 50  0001 C CNN
+F 3 "" H 5850 2450 50  0001 C CNN
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2750 5350 2750
+Connection ~ 5350 2750
+Wire Wire Line
+	5850 2450 5350 2450
+Connection ~ 5350 2450
+Wire Wire Line
+	6300 2750 5850 2750
+Connection ~ 6300 2750
+Connection ~ 5850 2750
+Wire Wire Line
+	6300 2450 5850 2450
+Connection ~ 6300 2450
+Connection ~ 5850 2450
+Wire Wire Line
+	6850 2750 6850 3000
+Connection ~ 6850 2750
+Connection ~ 6850 3000
+Wire Wire Line
+	6850 3000 6850 3150
+$Comp
+L Diode:1N5819 D3
+U 1 1 68AFA30E
+P 5800 3600
+F 0 "D3" H 5800 3750 50  0000 C CNN
+F 1 "1N5819" H 5800 3850 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5800 3425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 5800 3600 50  0001 C CNN
+	1    5800 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N5819 D2
+U 1 1 68AFA3E8
+P 5800 3400
+F 0 "D2" H 5800 3184 50  0000 C CNN
+F 1 "1N5819" H 5800 3275 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5800 3225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 5800 3400 50  0001 C CNN
+	1    5800 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 68AFACF2
+P 5200 3450
+F 0 "J2" H 5118 3667 50  0000 C CNN
+F 1 "Conn_01x02" H 5118 3576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5200 3450 50  0001 C CNN
+F 3 "~" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3450 5650 3450
+Wire Wire Line
+	5650 3450 5650 3400
+Wire Wire Line
+	5400 3550 5650 3550
+Wire Wire Line
+	5650 3550 5650 3600
+Wire Wire Line
+	5950 3600 6350 3600
+Connection ~ 6350 3600
+Wire Wire Line
+	5950 3400 6350 3400
+Wire Wire Line
+	6350 3400 6350 3600
+Wire Notes Line
+	6250 3750 6700 3750
+Wire Notes Line
+	6700 3750 6700 4100
+Wire Notes Line
+	6700 4100 6250 4100
+Wire Notes Line
+	6250 4100 6250 3750
+Wire Notes Line
+	5600 3900 6000 3900
+Wire Notes Line
+	6000 3900 6000 3100
+Wire Notes Line
+	6000 3100 5600 3100
+Wire Notes Line
+	5600 3100 5600 3900
+Text Notes 3900 4200 0    50   ~ 0
+Observação: D2, D3 e R4 são componentes opcionais.\nNão soldar estes componentes se este módulo for usado\npara um canal dedicado e usar jumper de fio para D2 e D3.
+$EndSCHEMATC
