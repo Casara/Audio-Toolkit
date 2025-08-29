@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    // Git
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "GitHub.vscode-pull-request-github",
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+
+    // Markdown
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-emoji",
+    "bierner.emojisense",
+    "bierner.markdown-shiki",
+    "DavidAnson.vscode-markdownlint",
+
+    // Themes
+    "akamud.vscode-theme-onedark",
+    "emmanuelbeziat.vscode-great-icons",
+    "PKief.material-icon-theme",
+
+    // Others
+    "EditorConfig.EditorConfig",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+  ]
+}

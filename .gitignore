@@ -1,0 +1,45 @@
+# KiCad Files to Ignore
+
+## Arquivos de bloqueio, logs e backups automáticos
+*.lck
+*.log
+*.bak
+
+## Arquivos que o KiCad gera para gerenciamento de bibliotecas
+*.dcm
+*.gih
+*.lib
+
+## Versões de backup dos arquivos do projeto
+*.pro~
+*.kicad_pcb~
+*.kicad_pro~
+*.kicad_sch~
+
+## A pasta de modelos 3D que o KiCad gera
+/3d/
+
+# KiCad specific files to ignore
+
+## Os arquivos Gerber gerados para enviar para a fabricação. Eles devem ser gerados sob demanda e não versionados
+/gerbers/
+
+## Esses são padrões genéricos para ignorar arquivos com extensões comuns que o KiCad usa em arquivos temporários ou de saída
+*.b?
+*.c?
+*.d?
+*.f?
+*.g?
+*.n?
+*.o?
+*.p?
+*.r?
+*.s?
+*.x?
+
+# VSCode
+
+## Ignore a pasta .vscode inteira, exceto arquivos de configurações importantes
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
