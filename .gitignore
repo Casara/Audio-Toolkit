@@ -11,10 +11,7 @@
 *.lib
 
 ## Versões de backup dos arquivos do projeto
-*.pro~
-*.kicad_pcb~
-*.kicad_pro~
-*.kicad_sch~
+*.*-bak
 
 ## A pasta de modelos 3D que o KiCad gera
 /3d/
@@ -25,6 +22,7 @@
 /gerbers/
 
 ## Esses são padrões genéricos para ignorar arquivos com extensões comuns que o KiCad usa em arquivos temporários ou de saída
+fp-info-cache
 *.b?
 *.c?
 *.d?
